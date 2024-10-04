@@ -33,7 +33,7 @@ urlpatterns = [
     path('password-change/', ChangePasswordView.as_view(), name='password_change'),
     path('admin/', admin.site.urls),
     path('productos/', include('productos.urls')),  # Incluyendo las rutas de la app productos
-    path('', include('landing_page.urls')),  # La landing page u otras apps
+    #path('', include('landing_page.urls')),  # La landing page u otras apps
 
     re_path(r'^oauth/', include('social_django.urls', namespace='social')),
 
